@@ -44,6 +44,9 @@ img {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.link:hover, .link:focus {
+  color: var(--accent-text-color);
+}
 
 .conteiner {
   width: 1200px;
@@ -87,16 +90,12 @@ img {
   transform: scale(1);
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.logo-nav:hover, .logo-nav:focus {
+  transform: scale(1.05);
+}
 
 .logoheader {
   color: var(--title-text-color);
-}
-
-.logo-nav:hover,
-.logo-nav:focus,
-.logo-footer:hover,
-.logo-footer:focus {
-  transform: scale(1.05);
 }
 
 .navbar {
@@ -112,7 +111,6 @@ img {
 .nav-link {
   position: relative;
 }
-
 .nav-link.current::after {
   content: "";
   position: absolute;
@@ -135,17 +133,9 @@ img {
   margin-right: 50px;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-text-color);
-}
-
 .contact-list {
   display: flex;
   margin-left: auto;
-}
-.contact-list:not(:last-child) {
-  margin-right: 50px;
 }
 
 .contact-link {
@@ -161,6 +151,10 @@ img {
 .contact-link:hover, .contact-link:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
+}
+
+.contact-item {
+  margin-right: 50px;
 }
 
 .navbar-list .current {
@@ -454,6 +448,9 @@ img {
   transform: scale(1);
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.logo-footer:hover, .logo-footer:focus {
+  transform: scale(1.05);
+}
 
 .logofooter {
   color: var(--primari-white-color);
@@ -549,15 +546,15 @@ img {
   margin-bottom: 50px;
 }
 
-.filter-item {
-  display: i;
+.filter-list__item {
+  display: flex;
   margin-right: 8px;
 }
-.filter-item:last-child {
+.filter-list__item:last-child {
   margin-right: 0;
 }
 
-.filter-btn {
+.filter-list__item__btn {
   padding: 6px 22px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -572,7 +569,7 @@ img {
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-btn:hover, .filter-btn:focus {
+.filter-list__item__btn:hover, .filter-list__item__btn:focus {
   transform: scale(1.05);
   background-color: var(--accent-text-color);
   color: var(--primari-white-color);

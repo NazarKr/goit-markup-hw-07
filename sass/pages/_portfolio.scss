@@ -6,7 +6,7 @@
   margin-bottom: 50px;
 }
 
-.filter-item {
+.filter-list__item {
   display: flex;
   margin-right: 8px;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.filter-btn {
+.filter-list__item__btn {
   padding: 6px 22px;
   background-color: #f5f4fa;
   border-radius: 4px;
